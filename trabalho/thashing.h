@@ -29,4 +29,5 @@ class THashing{
         virtual int buscar(StopWord);
         virtual void imprimir();
         virtual bool isChave(string);
+        virtual string *chaves();
 };

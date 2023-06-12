@@ -95,3 +95,18 @@ StopWord::StopWord(){
         }
         return false;
     }
+    string *THashing::chaves(){
+        string *l = new string[quant_elementos];
+        int j = 0;
+        for(int i=0;i<quant_elementos;i++){
+            while(j<tamanho){
+                if(tabela[j].getChave() != ""){
+                    l[i] = tabela[j].getChave();
+                    j++;
+                    break;
+                } 
+                j++;
+            }
+        }
+        return l;
+    }
